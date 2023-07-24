@@ -1,4 +1,4 @@
-# comic-dl
+# get-comics
 CLI tool for downloading comics from https://getcomics.org/
 
 
