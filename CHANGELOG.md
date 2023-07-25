@@ -2,7 +2,14 @@
 
 
 
-## v0.1.0 (2023-07-24)
+## v0.1.1 (2023-07-24)
+
+### Fix
+
+* fix: Add __future__ import to sample test ([`87a8d02`](https://github.com/Babarbitz/comic-dl/commit/87a8d024184aeeaaf587051413c35aee954abb0e))
+
+
+## v0.1.0 (2023-07-25)
 
 ### Chore
 
