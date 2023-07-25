@@ -6,7 +6,7 @@ from sys import argv
 
 from setuptools import setup
 
-__version__ = "0.0.0"
+__version__ = "0.1.0"
 
 try:
     from semantic_release import setup_hook
