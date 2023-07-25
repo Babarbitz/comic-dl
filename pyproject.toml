@@ -5,7 +5,7 @@ commit_parser = "angular"
 logging_use_named_masks = false
 major_on_zero = true
 tag_format = "v{version}"
-version_variables = ["setup.py:__version__", "getcomics/__init__.py:__version__"]
+version_variables = ["setup.py:__version__"]
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
