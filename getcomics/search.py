@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import urllib.parse
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -46,6 +48,14 @@ def search(search_term: str) -> list[dict]:
         return results
     except AttributeError:
         print(f"No results for search term {search_term}")
+
+
+def _makeSearchUrl(search: str, page: int = None):
+    encoded_search = urllib.parse.quote(search)
+    if page:
+        return f"https://getcomics.org/page/{page}/?s={encoded_search}"
+    else:
+        return f"https://getcomics.org/?s={encoded_search}"
 
 
 def _makeResultDict(
