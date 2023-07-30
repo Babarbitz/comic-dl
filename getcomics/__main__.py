@@ -90,7 +90,7 @@ def select_item(items: int) -> int:
 
 
 def print_results(results: list[dict]) -> None:
-    for idx, result in enumerate(results):
+    for idx, result in enumerate(results["data"]):
         print(
             textwrap.dedent(
                 f"""\
@@ -100,6 +100,13 @@ def print_results(results: list[dict]) -> None:
         """
             )
         )
+    print(
+        textwrap.dedent(
+            f"""\
+        page: {results["pages"]["current"]} of {results["pages"]["last"]}
+    """
+        )
+    )
 
 
 def print_help() -> None:
