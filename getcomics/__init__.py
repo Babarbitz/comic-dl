@@ -2,6 +2,4 @@
 
 from __future__ import annotations
 
-
-def __init__():
-    pass
+__version__ = "0.1.1"

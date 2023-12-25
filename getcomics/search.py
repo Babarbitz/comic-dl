@@ -25,7 +25,7 @@ def search(search_term: str, page_number: int = 1) -> list[dict]:
     return results
 
 
-def parseSearchResults(soup: BeautifulSoup):
+def parseSearchResults(soup: BeautifulSoup) -> list[dict]:
     posts = soup.find_all("article", class_="post")
     results = []
 
