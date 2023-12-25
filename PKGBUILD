@@ -1,6 +1,6 @@
 pkgname=mpd-albumart
 pkgrel=1
-pkgver=0.0.1
+pkgver=0.1.2
 conflicts=('mpd-albumart')
 pkgdesc="Downloads albumart for MPD"
 arch=('x86_64')
