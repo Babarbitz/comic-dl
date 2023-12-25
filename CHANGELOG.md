@@ -2,7 +2,33 @@
 
 
 
-## v0.1.1 (2023-07-24)
+## v0.1.2 (2023-12-25)
+
+### Chore
+
+* chore: Removed setup.py ([`517bd0f`](https://github.com/Babarbitz/comic-dl/commit/517bd0f4bebb8bc59fbfbcfdcf7f19864474c526))
+
+### Fix
+
+* fix: fix several bugs in download method ([`2be6fd9`](https://github.com/Babarbitz/comic-dl/commit/2be6fd9416faceb014f6a4f0cf0bd2805232da5c))
+
+### Refactor
+
+* refactor: Added pagination parsing/tests ([`5282807`](https://github.com/Babarbitz/comic-dl/commit/52828072cd6d574d154127d31de59da3d3146157))
+
+* refactor: search now uses _makeSearchUrl ([`f96623d`](https://github.com/Babarbitz/comic-dl/commit/f96623d32761095ef7c30ea9da3a892ed711944a))
+
+* refactor: Added _makeSearchUrl
+
+Better for unit testing search urls ([`e85eef2`](https://github.com/Babarbitz/comic-dl/commit/e85eef293c42143778cc9f866cf6009966dbd2e0))
+
+* refactor: Moved search functions to new file
+
+The search function is being broken down into smaller chunks to allow
+for better integration/unit testing. ([`578c850`](https://github.com/Babarbitz/comic-dl/commit/578c85045f2f10f1737fbaecc802f16041a78568))
+
+
+## v0.1.1 (2023-07-25)
 
 ### Fix
 
