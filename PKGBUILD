@@ -1,6 +1,6 @@
 pkgname=get-comics
 pkgrel=1
-pkgver=0.1.2
+pkgver=0.1.3
 conflicts=('get-comics')
 pkgdesc="Downloads albumart for MPD"
 arch=('x86_64')
