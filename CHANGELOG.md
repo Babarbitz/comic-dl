@@ -2,6 +2,21 @@
 
 
 
+## v0.1.3 (2023-12-25)
+
+### Chore
+
+* chore(build): Updated package build ([`d2aab71`](https://github.com/Babarbitz/comic-dl/commit/d2aab712013048e7d97baa4fae57420374461208))
+
+### Fix
+
+* fix: Fixed bug in library linking ([`813af6a`](https://github.com/Babarbitz/comic-dl/commit/813af6a1208f7c612001a755772d3c8de1bd171e))
+
+### Refactor
+
+* refactor: Changed library structure ([`a854975`](https://github.com/Babarbitz/comic-dl/commit/a854975c6010c2a0faee6b40b167354ef67fcff4))
+
+
 ## v0.1.2 (2023-12-25)
 
 ### Chore
