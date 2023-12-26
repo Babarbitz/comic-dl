@@ -2,7 +2,14 @@
 
 
 
-## v0.1.3 (2023-12-25)
+## v0.1.4 (2023-12-25)
+
+### Fix
+
+* fix: Library linking ([`e6a6264`](https://github.com/Babarbitz/comic-dl/commit/e6a62649e0eac6443b6d952201eb05f4a7ed3fbb))
+
+
+## v0.1.3 (2023-12-26)
 
 ### Chore
 
