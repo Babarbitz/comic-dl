@@ -1,7 +1,7 @@
-pkgname=mpd-albumart
+pkgname=get-comics
 pkgrel=1
 pkgver=0.1.2
-conflicts=('mpd-albumart')
+conflicts=('get-comics')
 pkgdesc="Downloads albumart for MPD"
 arch=('x86_64')
 url="https://github.com/Babarbitz/get-comics"

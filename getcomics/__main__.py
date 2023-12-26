@@ -6,8 +6,11 @@ from __future__ import annotations
 import sys
 import textwrap
 
-from download import download, parseDownloadPage
-from search import search
+from utils.download import download, parseDownloadPage
+from utils.search import search
+
+# import getcomics
+
 
 # import logging as log
 # import yaml

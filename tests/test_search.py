@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import getcomics.search as search
+import getcomics.utils.search as search
 
 
 class TestSearchUnit:

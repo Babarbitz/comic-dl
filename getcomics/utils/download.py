@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-
-
 from __future__ import annotations
 
 import urllib.parse
@@ -44,24 +41,6 @@ def parseDownloadPage(url: str) -> dict:
         results = results + button_items
 
     return results
-
-
-# def parseMultiFormatPage(soup: BeautifulSoup) -> dict:
-#     results = { }
-#     for form in soup:
-#         format_type = form.text.casefold()
-#         items = {}
-#         for tag in form.next_siblings:
-#             if tag.name == "h3": break
-#             if tag.name != "ul": continue
-#             posts = tag.find_all("li")
-#             items.update(parseListItems(posts))
-#         results[format_type] = items
-
-#     if results["regular issues"]: return results["regular issues"]
-#     elif results["trades"]: return results["trades"]
-#     elif results["omnibuses"]: return results["omnibuses"]
-#     else: return results
 
 
 def parseListItems(soup: BeautifulSoup) -> dict:
