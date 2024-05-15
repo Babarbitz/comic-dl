@@ -2,7 +2,18 @@
 
 
 
-## v0.1.4 (2023-12-25)
+## v0.1.5 (2024-05-15)
+
+### Chore
+
+* chore: Updated PKGBUILD ([`2259481`](https://github.com/Babarbitz/comic-dl/commit/2259481302cd1682239a1a357d845d47488601f5))
+
+### Fix
+
+* fix: Title now used when filename can&#39;t be determined ([`26046eb`](https://github.com/Babarbitz/comic-dl/commit/26046eb53bf8dc7aa3afa1063f9aeff35cdceb7e))
+
+
+## v0.1.4 (2023-12-26)
 
 ### Fix
 
