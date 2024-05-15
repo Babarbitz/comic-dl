@@ -12,9 +12,9 @@ def download(downloads: list) -> None:
     for item in downloads:
         links = item["links"]
         if "main server" in links:
-            downloadMainServer(links["main server"])
+            downloadMainServer(item["title"], links["main server"])
         elif "download now" in links:
-            downloadMainServer(links["download now"])
+            downloadMainServer(item["title"], links["download now"])
         elif "mediafire" in links:
             pass
         elif "mega" in links:
@@ -87,18 +87,26 @@ def parseDownloadButtons(soup: BeautifulSoup) -> dict:
         return None
 
 
-def downloadMainServer(url: str) -> None:
-    print(url)
+def downloadMainServer(filename: str, url: str) -> None:
     # Determine filename and filepath
-    filename = urllib.parse.unquote(url.split("/")[-1])
+    url_filename = urllib.parse.unquote(url.split("/")[-1])
     filepath = path.expanduser("~") + "/Downloads/"
-    print(filename)
-    print(filepath)
+
+    filename_changed = False
+
+    for suffix in [".cbr", ".cbz", ".zip", ".rar"]:
+        if suffix in url_filename:
+            filename_changed = True
+            filename = url_filename
+
+    if not filename_changed:
+        filename += ".zip"
 
     # Download the file via stream and display progress in cli
     print(f"Downloading {filename}")
 
     r = requests.get(url, stream=True)
+
     total_size_in_bytes = int(r.headers.get("content-length", 0))
     progress_bar = tqdm(total=total_size_in_bytes, unit="iB", unit_scale=True)
 

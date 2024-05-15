@@ -35,15 +35,13 @@ def input_range() -> list:
         entry = input("Select all items to download (1-x,y,z): ")
         try:
             entries = parseRangeString(entry)
-            if not isinstance(entries, list):
-                pass
-            else:
+            if isinstance(entries, list):
                 return entries
         except ValueError:
             print("Invalid selection")
 
 
-def parseRangeString(x):
+def parseRangeString(x: str) -> list:
     result = []
     for part in x.split(","):
         if "-" in part:
@@ -109,13 +107,6 @@ def cli_run() -> None:
                 print_search_results(results)
         if flag == "-d" or flag == "--download":
             url = sys.argv[idx + 1]
-            # search_term = " ".join(str(item) for item in sys.argv[idx + 1 :])
-            # results = search(search_term)
-            # if results:
-            # print_results(results)
-            # choice = select_item(len(results["data"]))
-            # download(results["data"][choice - 1]["link"])
-            # parseDownloadPage(url)
             results = parseDownloadPage(url)
             print_download_results(results)
             items = input_range()
